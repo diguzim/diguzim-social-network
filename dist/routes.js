@@ -1,7 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = require("express");
-const router = express_1.Router();
-router.get('/', (req, res) => res.send('Olar mundow!'));
-exports.default = router;
+module.exports = (router) => {
+    router.get('/', (req, res) => res.send('Olar mundow!'));
+    return router;
+};
 //# sourceMappingURL=routes.js.map

@@ -1,7 +1,5 @@
-import { Router } from 'express';
+module.exports = (router) => {
+  router.get('/', (req, res) => res.send('Olar mundow!'))
 
-const router = Router();
-
-router.get('/', (req, res) => res.send('Olar mundow!'))
-
-export default router
+  return router;
+}
